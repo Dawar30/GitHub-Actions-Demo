@@ -11,6 +11,14 @@ app.get('/', (req, res) => {
   res.json({ message: 'Welcome to home page' });
 });
 
+app.get('/about', (req, res) => {
+  res.json({ message: 'This is the about page' });
+});
+
+app.get('/contact', (req, res) => {
+  res.json({ message: 'This is the contact page' });
+});
+
 app.get('/health', (req, res) => {
   res.json({ status: 'OK', timestamp: new Date() });
 });
